@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.logo {
+
+    width: 16.25rem;
+
+}
+
+nav a.nav-link {
+   font-weight: 500;
+   letter-spacing: 0.0375rem;
+   cursor: pointer;
+   margin: left;
+
+}
