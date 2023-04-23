@@ -50,7 +50,7 @@ body {
 }
 
 .logo {
-  width: 16.25rem;
+  width: 8rem;
 }
 
 nav a.nav-link {
@@ -67,7 +67,7 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-whit);
-  border-top: 0.1875rem solid var(--primary-dark) !important;
+  border-top: 0.1875rem solid var(--primary-white);
 
 
 }
@@ -78,5 +78,7 @@ nav ul li {
   height: 6rem !important;
 }
  .navbar-nav > li > a.active , .navbar-nav > li > a:hover {
-   border-top: 0.1875rem solid var(--primary-white) !important;
+   border-top: 0.1875rem solid var(--primary-purple) !important;
 }
+
+
