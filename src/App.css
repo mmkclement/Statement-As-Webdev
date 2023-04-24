@@ -74,6 +74,12 @@ nav ul li {
   padding: 0 !important;
   height: 6rem !important;
 }
+
+@media(max-width: 768px) {
+  .navbar-brand {
+   width: 1rem !important;
+  }
+ }
 .navbar-nav > li > a.active,
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-purple) !important;
@@ -108,6 +114,14 @@ nav ul li {
   color: var(--primary-purple);
   text-transform: uppercase;
 }
+
+@media(max-width: 768px) {
+ .main-info h1 {
+  font-size: 1.5rem !important;
+ }
+}
+
+
 
 /* TYPED TEXT */
 
