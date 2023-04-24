@@ -14,7 +14,7 @@ const Service = () => {
       <div className="py-5">
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-sm-6">
+            <div className="col-lg-3 col-md-3 col-lg-3 col-sm-6">
               <div className="box">
                 <div className="circle">
                   {" "}
@@ -33,7 +33,7 @@ const Service = () => {
               </div>
             </div>
             {/* */}
-            <div className="col-md-3 col-sm-6">
+            <div className="col-lg-3  col-md-3 col-sm-6">
               <div className="box">
                 <FontAwesomeIcon
                   icon={faCode}
@@ -49,7 +49,7 @@ const Service = () => {
               </div>
             </div>
             {/* */}
-            <div className="col-md-3 col-sm-6">
+            <div className=" col-lg-3 col-md-3 col-sm-6">
               <div className="box">
                 <FontAwesomeIcon
                   icon={faTowerBroadcast}
