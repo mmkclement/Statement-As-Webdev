@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Kanit", sans-serif;
+  font-family: "Kanit", sans-serif !important;
 }
 .App {
   text-align: center;
@@ -48,9 +48,49 @@ body {
   }
 }
 
-.logo {
+/* .logo {
   width: 8rem;
+} */
+
+.pulser {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin-left: 12px;
+
 }
+
+.pulser::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background: var(--primary-purple);
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse 3000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+
+.pulser::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: blueviolet;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.4;
+  }
+}
+
 
 nav a.nav-link {
   letter-spacing: 0.0375rem;
@@ -151,4 +191,30 @@ nav ul li {
   background-color: var(--primary-whit);
   color: #800080;
   transition: O.2 ease-in-out;
+}
+
+/*  ABOUT ME   */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.profile-img {
+ width: 361px;
+ height: 361px;
+border-radius: 50%;
+padding: .3rem;
+}
+
+.about-heading {
+  color: var(--primary-purple);
+  text-transform: uppercase;
+}
+
+@media(maxwidth: 468px) {
+  .profile-img {
+    width: 10rem;
+  }
 }
