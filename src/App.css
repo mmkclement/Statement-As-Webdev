@@ -89,8 +89,14 @@ nav ul li {
   height: 90vh;
 }
 
+
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -106,7 +112,29 @@ nav ul li {
 /* TYPED TEXT */
 
 .typed-text {
-
   font-size: 2rem;
   color: white;
+}
+
+/* HEADER BUTTON  */
+
+
+.btn-main-offer {
+  text-decoration: none;
+
+  border: 1px Solid var(--primary-purple);
+  text-transform: uppercase;
+  border-radius: 4rem;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-whit);
+  margin: 2rem;
+
+
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-whit);
+  color: #800080;
+  transition: O.2 ease-in-out;
 }
