@@ -194,19 +194,25 @@ nav ul li {
 }
 
 /*  ABOUT ME   */
+
 .photo-wrap {
+
   display: flex;
   justify-content: center;
-  align-items: center;
-
+  align-items:center ;
 }
 
-.profile-img {
- width: 500px;
- height: 400px;
 
+.profile-img{
+width: 500px;
+border-radius: 10px;
+height: 400px;
+box-shadow: 4px 16px 28px -20px rgba(121, 125, 133, 0.5);
 }
 
+
+
+  
 .about-heading {
   color: var(--primary-purple);
   text-transform: uppercase;
@@ -252,6 +258,7 @@ nav ul li {
 .experience h1{
   text-transform: uppercase;
   color: var(--primary-purple);
+
 }
 
 .experience-wrapper:before {
