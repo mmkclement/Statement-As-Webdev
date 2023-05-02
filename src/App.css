@@ -538,3 +538,27 @@ textarea.formcontrol {
     padding: 0 0.4rem;
   }
 }
+
+
+/* footer component */
+
+.footer {
+
+  background-color: whitesmoke;
+  color: var(--primary-purple);
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-purple);
+}
+
+.footer p  , a {
+  margin-top: 4px;
+  margin-bottom: 0;
+}

@@ -1,4 +1,4 @@
-import React, { useRef , useState} from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -31,7 +31,6 @@ const Contact = () => {
           Please fill out the form and describe your project needs and I'll
           contact you asap
         </p>
-
       </div>
       <div className="container">
         <form ref={form} onSubmit={sendEmail}>
@@ -83,10 +82,12 @@ const Contact = () => {
                 contact me
               </button>
               {isSent && (
-          <div className="sent-message">
-            <p color="white">Your message has been sent. Thank you for contacting me!</p>
-          </div>
-        )}
+                <div className="sent-message">
+                  <p color="white">
+                    Your message has been sent. Thank you for contacting me!
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </form>
