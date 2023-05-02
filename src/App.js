@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Service from "./components/Service";
 import Experience from "./components/Experience";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <AboutMe />
       <Service />
       <Experience />
+      <Testimonials />
     </>
   );
 }
