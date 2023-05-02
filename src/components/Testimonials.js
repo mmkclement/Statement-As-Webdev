@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 
 const Testimonials = () => {
@@ -11,7 +11,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Testimonials
+export default Testimonials;

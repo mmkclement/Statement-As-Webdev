@@ -9,6 +9,7 @@
 body {
   font-family: "Kanit", sans-serif !important;
 }
+
 .App {
   text-align: center;
 }
@@ -43,6 +44,7 @@ body {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -84,6 +86,7 @@ body {
   0% {
     opacity: 0;
   }
+
   50% {
     transform: scale(1.4);
     opacity: 0.4;
@@ -100,7 +103,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav > li > a {
+.navbar-nav>li>a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-whit);
@@ -118,8 +121,9 @@ nav ul li {
     width: 1rem !important;
   }
 }
-.navbar-nav > li > a.active,
-.navbar-nav > li > a:hover {
+
+.navbar-nav>li>a.active,
+.navbar-nav>li>a:hover {
   border-top: 0.1875rem solid var(--primary-purple) !important;
 }
 
@@ -205,9 +209,16 @@ nav ul li {
   text-transform: uppercase;
 }
 
-@media (maxwidth: 468px) {
+@media (max-width: 768px) {
   .profile-img {
-    width: 10rem;
+    max-width: 90%;
+  }
+}
+
+/* Use a media query to adjust the photo width on even smaller screens */
+@media (max-width: 480px) {
+  .profile-img {
+    max-width: 100%;
   }
 }
 
@@ -242,6 +253,7 @@ nav ul li {
   padding: 3.125rem 0;
   overflow: hidden;
 }
+
 .experience h1 {
   text-transform: uppercase;
   color: var(--primary-purple);
@@ -304,6 +316,7 @@ nav ul li {
   .experience .container {
     padding-left: 0;
   }
+
   .experience-wrapper:before {
     left: 0.5rem;
     margin-bottom: 1.875rem;
@@ -348,13 +361,11 @@ nav ul li {
 
 .animate-charcter {
   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
   background-size: 50%;
   background-clip: border-box;
   background-size: 30% auto;
@@ -400,7 +411,6 @@ Resources .myCarousel {
 }
 
 .myCarousel p {
-
   color: black;
 }
 
@@ -412,4 +422,119 @@ Resources .myCarousel {
 .carousel-root {
   margin: auto !important;
   margin-top: 3% !important;
+}
+
+/*  Contact */
+
+.contacts {
+  background-color: #282c34;
+  padding: 3rem auto;
+}
+
+.contacts h1 {
+  color: var(--primary-purple);
+  padding: 1.3rem;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: aliceblue;
+}
+
+/*  Contact  input*/
+
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-purple);
+  border-radius: 0;
+  color: var(--primary-whit);
+  outline: 0 !important;
+  box-sizing: none !important;
+  top: 0;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+
+  padding: 4rem 0;
+
+}
+
+.contacts input:focus, .contacts textarea:focus {
+  color: black;
+  border-bottom: 0.125rem solid var(--primary-purple);
+
+}
+
+.contacts textarea {
+
+  height: 12.15rem !important;
+}
+
+.contact-btn {
+margin: 1rem 0 0 0;
+width: 100%;
+background: none;
+text-align: center;
+
+}
+
+.line {
+  position: relative;
+  top: -2rem;
+  width: 0;
+  height: 0.125rem;
+  background: whitesmoke;
+  display: inline-block;
+}
+
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+
+input.formcontrol {
+  margin: -0.3rem 0;
+
+}
+
+textarea.formcontrol {
+  margin: -0.3rem 0;
+}
+
+/*  Contact media */
+
+
+@media (max-width: 768px) {
+
+  .contacts {
+   overflow-x: hidden;
+  }
+  .contacts .container {
+    padding: 0 1rem ;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
+}
+
+/* Use a media query to adjust the photo width on even smaller screens */
+@media (max-width: 480px) {
+  .contacts .container {
+    padding: 0 1rem ;
+  }
+
+  .contacts p {
+    padding: 0 0.4rem;
+  }
 }

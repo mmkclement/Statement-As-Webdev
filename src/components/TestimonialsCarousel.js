@@ -9,19 +9,20 @@ import avatar4 from "../images/Avatar 4.png";
 function TestimonialsCarousel() {
   return (
     <Carousel
-
       showArrows={true}
       infiniteLoop={true}
       showThumbs={false}
       showStatus={false}
       autoPlay={true}
-      interval={3500}>
+      interval={3500}
+    >
       <>
         <img src={avatar1} alt="Client 1" />
         <div className="myCarousel">
           <h3 class="animate-charcter">Artist - Aung Ko </h3>
           <p>
-            Maung Aka Mango who is always interested in learning and trying new things
+            Maung Aka Mango who is always interested in learning and trying new
+            things
           </p>
         </div>
       </>
@@ -39,7 +40,7 @@ function TestimonialsCarousel() {
         </div>
       </>
       <>
-        <img  src={avatar3} alt="Client 3" />
+        <img src={avatar3} alt="Client 3" />
         <div className="myCarousel">
           <h3 class="animate-charcter">Artist - Thoe Htein </h3>
           <p>
