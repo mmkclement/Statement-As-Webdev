@@ -103,7 +103,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--primary-whit);
@@ -122,8 +122,8 @@ nav ul li {
   }
 }
 
-.navbar-nav>li>a.active,
-.navbar-nav>li>a:hover {
+.navbar-nav > li > a.active,
+.navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-purple) !important;
 }
 
@@ -134,7 +134,7 @@ nav ul li {
   background: url(Background-header.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -151,8 +151,30 @@ nav ul li {
   font-family: "Kanit", sans-serif;
 }
 
+.animate-head {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    blueviolet 29%,
+    whitesmoke 67%,
+    white 100%
+  );
+  background-size: 50%;
+  background-clip: border-box;
+  background-size: 30% auto;
+  color: #fff;
+  background-clip: text;
+  text-decoration-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 30s linear infinite;
+  display: inline-block;
+  font-size: 50px;
+}
+
 .main-info h1 {
-  color: var(--primary-purple);
+  color: snow;
   text-transform: uppercase;
 }
 
@@ -178,9 +200,14 @@ nav ul li {
   text-transform: uppercase;
   border-radius: 4rem;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-whit);
+  color: #4bfc99;
   margin: 2rem;
 }
+
+
+
+
+
 
 .btn-main-offer:hover {
   text-decoration: none;
@@ -188,7 +215,6 @@ nav ul li {
   color: #800080;
   transition: O.2 ease-in-out;
 }
-
 /*  ABOUT ME   */
 
 .photo-wrap {
@@ -255,6 +281,7 @@ nav ul li {
 }
 
 .experience h1 {
+  margin: 20px;
   text-transform: uppercase;
   color: var(--primary-purple);
 }
@@ -361,11 +388,13 @@ nav ul li {
 
 .animate-charcter {
   text-transform: uppercase;
-  background-image: linear-gradient(-225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%);
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
   background-size: 50%;
   background-clip: border-box;
   background-size: 30% auto;
@@ -461,28 +490,24 @@ Resources .myCarousel {
 }
 
 .contacts .container {
-
   padding: 4rem 0;
-
 }
 
-.contacts input:focus, .contacts textarea:focus {
+.contacts input:focus,
+.contacts textarea:focus {
   color: black;
   border-bottom: 0.125rem solid var(--primary-purple);
-
 }
 
 .contacts textarea {
-
   height: 12.15rem !important;
 }
 
 .contact-btn {
-margin: 1rem 0 0 0;
-width: 100%;
-background: none;
-text-align: center;
-
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+  text-align: center;
 }
 
 .line {
@@ -494,17 +519,14 @@ text-align: center;
   display: inline-block;
 }
 
-
 input:focus + .line,
 textarea:focus + .line {
   width: 100%;
   transition: width 0.5s ease-in-out;
 }
 
-
 input.formcontrol {
   margin: -0.3rem 0;
-
 }
 
 textarea.formcontrol {
@@ -513,14 +535,12 @@ textarea.formcontrol {
 
 /*  Contact media */
 
-
 @media (max-width: 768px) {
-
   .contacts {
-   overflow-x: hidden;
+    overflow-x: hidden;
   }
   .contacts .container {
-    padding: 0 1rem ;
+    padding: 0 1rem;
   }
 
   .contacts p {
@@ -531,7 +551,7 @@ textarea.formcontrol {
 /* Use a media query to adjust the photo width on even smaller screens */
 @media (max-width: 480px) {
   .contacts .container {
-    padding: 0 1rem ;
+    padding: 0 1rem;
   }
 
   .contacts p {
@@ -539,11 +559,9 @@ textarea.formcontrol {
   }
 }
 
-
 /* footer component */
 
 .footer {
-
   background-color: whitesmoke;
   color: var(--primary-purple);
   padding: 3rem;
@@ -559,7 +577,8 @@ textarea.formcontrol {
   color: var(--primary-purple);
 }
 
-.footer p  , a {
+.footer p,
+a {
   margin-top: 4px;
   margin-bottom: 0;
 }
