@@ -23,68 +23,32 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item active">
-              <Link
-                smooth={true}
-                to="home"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link smooth= {true} to="home"  offset={-110} className="nav-link" href="#">
                 Home{" "}
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                smooth={true}
-                to="about"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link  smooth= {true} to="about" offset={-110} className="nav-link" href="#">
                 about me
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                smooth={true}
-                to="services"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link  smooth= {true} to="services" offset={-110} className="nav-link" href="#">
                 services
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                smooth={true}
-                to="experiences"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link  smooth = {true} to="experiences" offset={-110} className="nav-link" href="#">
                 Experiences
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                smooth={true}
-                to="feedback"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link  smooth = {true} to="feedback" offset={-110} className="nav-link" href="#">
                 Feedbacks
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                smooth={true}
-                to="contacts"
-                offset={-110}
-                className="nav-link"
-                href="#"
-              >
+              <Link smooth = {true} to="contacts"  offset={-110}className="nav-link" href="#">
                 Contacts
               </Link>
             </li>
