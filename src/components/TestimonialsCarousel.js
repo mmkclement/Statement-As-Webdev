@@ -16,6 +16,20 @@ function TestimonialsCarousel() {
       autoPlay={true}
       interval={3500}
     >
+     <>
+        <img src={avatar4} alt="Client 4" />
+        <div className="myCarousel">
+          <h3 class="animate-charcter">Professor Sunny</h3>
+          <p>
+            I have two positive feedbacks to share with you: you have a lot of
+            courage and perseverance. During our classes, even when I presented
+            the most challenging topics, you had the courage to ask numerous
+            questions, which allowed everyone, including those who are hesitant
+            to speak up, to make progress. Congratulations to you for also
+            having the necessary courage to complete such a demanding fullstack bootcamp.
+          </p>
+        </div>
+      </>
       <>
         <img src={avatar1} alt="Client 1" />
         <div className="myCarousel">
@@ -31,11 +45,8 @@ function TestimonialsCarousel() {
         <div className="myCarousel">
           <h3 class="animate-charcter">Artist - Nge Lay </h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus fugiat a ipsum, amet cupiditate reprehenderit quod
-            reiciendis voluptates voluptatum impedit. Architecto quisquam illum
-            ipsum exercitationem temporibus aliquam voluptas voluptatibus
-            obcaecati?
+            "Thank you so much for your help with the technical issues I was
+            experiencing during my performance and exhibitions.
           </p>
         </div>
       </>
@@ -44,27 +55,14 @@ function TestimonialsCarousel() {
         <div className="myCarousel">
           <h3 class="animate-charcter">Artist - Thoe Htein </h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus fugiat a ipsum, amet cupiditate reprehenderit quod
-            reiciendis voluptates voluptatum impedit. Architecto quisquam illum
-            ipsum exercitationem temporibus aliquam voluptas voluptatibus
-            obcaecati?
+            Embracing the philosophy of 'Done is better than perfect,' I
+            consistently strived to provide efficient and reliable support,
+            enabling Tho Htein to focus on his artistic endeavors. Eager to
+            bring my expertise and dedication to your next project."
           </p>
         </div>
       </>
-      <>
-        <img src={avatar4} alt="Client 4" />
-        <div className="myCarousel">
-          <h3 class="animate-charcter">EZ going</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus fugiat a ipsum, amet cupiditate reprehenderit quod
-            reiciendis voluptates voluptatum impedit. Architecto quisquam illum
-            ipsum exercitationem temporibus aliquam voluptas voluptatibus
-            obcaecati?
-          </p>
-        </div>
-      </>
+
     </Carousel>
   );
 }
