@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const serviceID = "service_ID";
@@ -12,24 +12,29 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceID, templateID, form.current, apiKey).then(
-      (result) => {
-        console.log(sendEmail);
-        setIsSent(true);
-        form.current.reset();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    if (form.current.checkValidity()) {
+      emailjs.sendForm(serviceID, templateID, form.current, apiKey).then(
+        (result) => {
+          console.log(sendEmail);
+          setIsSent(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    } else {
+      form.current.reportValidity();
+    }
   };
+
   return (
     <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>Contact me ASAP</h1>
         <p>
           Please fill out the form and describe your project needs and I'll
-          contact you asap
+          contact you as soon as possible.
         </p>
       </div>
       <div className="container">
@@ -42,22 +47,25 @@ const Contact = () => {
                 placeholder="Name"
                 name="name"
                 type="text"
+                required
               />
               <div className="line"></div>
               {/* Phone input*/}
               <input
                 className="form-control"
-                placeholder="Avez vous 06 or number to call you"
+                placeholder="Phone"
                 name="phone"
                 type="text"
+                required
               />
               <div className="line"></div>
               {/* Email input*/}
               <input
                 className="form-control"
-                placeholder="E-mail or F-mail"
+                placeholder="Email"
                 name="email"
                 type="email"
+                required
               />
               <div className="line"></div>
               {/* Subject input*/}
@@ -66,20 +74,21 @@ const Contact = () => {
                 placeholder="Subject"
                 name="subject"
                 type="text"
+                required
               />
               <div className="line"></div>
             </div>
             <div className="col-md-6 col-xs_12">
-              {/* Description*/}
+              {/* Description */}
               <textarea
                 className="form-control"
                 placeholder="Please describe which services you wish to get."
                 name="description"
-                type="text"
+                required
               ></textarea>
               <div className="line"></div>
               <button className="btn-main-offer contact-btn" type="submit">
-                contact me
+                Contact Me
               </button>
               {isSent && (
                 <div className="sent-message">
