@@ -4,8 +4,8 @@ const Experience = () => {
   return (
     <div id="experiences" className="experience">
       <div className="d-flex justify-content-center my5">
-      <br />
-      <br />
+        <br />
+        <br />
         <h1>experience</h1>
       </div>
       <div className="container experience-wrapper">
