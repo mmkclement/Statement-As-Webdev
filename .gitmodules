@@ -1,3 +1,4 @@
-[submodule "maung.github.io"]
-    path = maung.github.io
-    url = https://github.com/example/maung.github.io .git
+[submodule "Statement-As-Webdev"]
+    path = path/to/submodule
+    url = https://github.com/mmkclement/Statement-As-Webdev.git
+
