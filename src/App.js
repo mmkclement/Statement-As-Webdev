@@ -7,6 +7,10 @@ import AboutMe from "./components/AboutMe";
 import Service from "./components/Service";
 import Experience from "./components/Experience";
 import Testimonials from "./components/Testimonials";
+import Contacts from "./components/Contact";
+import Footer from "./components/Footer";
+
+
 
 function App() {
   return (
@@ -17,6 +21,8 @@ function App() {
       <Service />
       <Experience />
       <Testimonials />
+      <Contacts />
+      <Footer />
     </>
   );
 }
